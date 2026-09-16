@@ -90,8 +90,8 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llama3.2"
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN = "8225957585:AAEvhCTE0pzCNTT_BQ5Fu5UJzh5LbkhL9_4"
-TELEGRAM_CHAT_ID = "@ids_icsBot"
+TELEGRAM_BOT_TOKEN = "[Redacted]"
+TELEGRAM_CHAT_ID = "[Redacted]"
 
 # Ports
 S7_PORT = 102
@@ -122,13 +122,10 @@ FEATURE_COLS = [
 # =============================================
 # 3. LSTM-AUTOENCODER ARCHITECTURE
 # =============================================
-
-
 class MultiTaskLSTMAutoencoder(nn.Module):
     """
     Multi-Task LSTM Autoencoder matching the trained model from Notebook 2.
     """
-
     def __init__(self, seq_len, num_features, latent_dim, num_classes, hidden_dim=128):
         super(MultiTaskLSTMAutoencoder, self).__init__()
         self.seq_len = seq_len
